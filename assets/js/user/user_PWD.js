@@ -35,6 +35,9 @@ $(function () {
         layer.msg("更新密码成功");
         //通过[0]转化为原生DOM
         $(".layui-form")[0].reset();
+        $(".layui-input-block [name=oldPwd]").val("");
+        $(".layui-input-block [name=newPwd]").val("");
+        $(".layui-input-block [name=repwd]").val("");
       },
     });
   });
